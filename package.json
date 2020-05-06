@@ -1,0 +1,27 @@
+{
+  "name": "api-proxy",
+  "version": "1.0.0",
+  "description": "Nodejs service for handling key-required api requests",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-cmd -f ./.env.local  functions-framework --target=trigger --port=8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acousens/api-proxy.git"
+  },
+  "author": "Adrian Cousens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acousens/api-proxy/issues"
+  },
+  "homepage": "https://github.com/acousens/api-proxy#readme",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.5.1",
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
